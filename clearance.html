@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все распродажи | Мой интернет-магазин</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clearance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body class="clearance-page">
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="photo/logo.png" alt="Логотип сайта" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Main Page</a></li>
+                    <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">All products</a></li>
+                    <li class="nav-item"><a href="clearance.html" class="nav-link active">All sales</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart-section">
+                <a href="cart.html" class="cart-link">
+                    <img src="photo/icon.svg" alt="Корзина" class="logo-img1">
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="clearance-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">CLEARANCE</h1>
+                        <h2 class="hero-subtitle"><strong>FINAL REDUCTIONS</strong></h2>
+                        <p class="hero-description">Ограниченные предложения. Товары со скидкой до 70%</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">24</div>
+                                <div class="stat-label">Товара</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">70%</div>
+                                <div class="stat-label">Макс. скидка</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">3</div>
+                                <div class="stat-label">Дня осталось</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clearance-filters-section">
+            <div class="container">
+                <div class="clearance-filters">
+                    <div class="filter-group">
+                        <div class="filter-item">
+                            <h3>Категория:</h3>
+                            <select class="filter-select">
+                                <option value="all">Все категории</option>
+                                <option value="tools">Инструменты</option>
+                                <option value="decor">Декор</option>
+                                <option value="plants">Растения</option>
+                                <option value="fertilizer">Удобрения</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-item">
+                            <h3>Скидка:</h3>
+                            <select class="filter-select">
+                                <option value="all">Любая скидка</option>
+                                <option value="high">50% и более</option>
+                                <option value="medium">30-49%</option>
+                                <option value="low">До 30%</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-item">
+                            <h3>Сортировка:</h3>
+                            <select class="filter-select">
+                                <option value="biggest">Сначала большие скидки</option>
+                                <option value="ending">Скоро заканчивается</option>
+                                <option value="price-low">От дешевых</option>
+                                <option value="price-high">От дорогих</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-actions">
+                        <button class="filter-reset-btn">
+                            <i class="fas fa-redo"></i> Сбросить фильтры
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clearance-products-section">
+            <div class="container">
+                <div class="clearance-grid">
+                    <!-- Товар 1 - Максимальная скидка -->
+                    <div class="clearance-card mega-discount">
+                        <div class="discount-badge">-70%</div>
+                        <div class="urgency-badge">
+                            <i class="fas fa-fire"></i> ХИТ ПРОДАЖ
+                        </div>
+                        <div class="product-image">
+                            <img src="photo/Decorative_forged_ brid.png" alt="Декоративная решетка">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Декоративная кованая решетка</h3>
+                            <p class="product-category">Садовый декор</p>
+                            
+                            <div class="price-section">
+                                <div class="current-price">$300</div>
+                                <div class="original-price">$1000</div>
+                                <div class="you-save">Экономия $700</div>
+                            </div>
+                            
+                            <div class="stock-info">
+                                <div class="stock-bar">
+                                    <div class="stock-progress" style="width: 20%;"></div>
+                                </div>
+                                <div class="stock-text">Осталось: 3 шт.</div>
+                            </div>
+                            
+                            <div class="timer">
+                                <i class="fas fa-clock"></i>
+                                <span class="time-left">23:59:59</span>
+                            </div>
+                            
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Товар 2 -->
+                    <div class="clearance-card">
+                        <div class="discount-badge">-60%</div>
+                        <div class="product-image">
+                            <img src="photo/Secateurs.png" alt="Секатор">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Секатор профессиональный</h3>
+                            <p class="product-category">Инструменты</p>
+                            
+                            <div class="price-section">
+                                <div class="current-price">$96</div>
+                                <div class="original-price">$240</div>
+                                <div class="you-save">Экономия $144</div>
+                            </div>
+                            
+                            <div class="stock-info">
+                                <div class="stock-bar">
+                                    <div class="stock-progress" style="width: 40%;"></div>
+                                </div>
+                                <div class="stock-text">Осталось: 8 шт.</div>
+                            </div>
+                            
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Товар 3 -->
+                    <div class="clearance-card">
+                        <div class="discount-badge">-55%</div>
+                        <div class="product-image">
+                            <img src="photo/Aquarium_lock.png" alt="Аквариумный замок">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Аквариумный замок декоративный</h3>
+                            <p class="product-category">Садовый декор</p>
+                            
+                            <div class="price-section">
+                                <div class="current-price">$90</div>
+                                <div class="original-price">$200</div>
+                                <div class="you-save">Экономия $110</div>
+                            </div>
+                            
+                            <div class="stock-info">
+                                <div class="stock-bar">
+                                    <div class="stock-progress" style="width: 60%;"></div>
+                                </div>
+                                <div class="stock-text">Осталось: 12 шт.</div>
+                            </div>
+                            
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Товар 4 -->
+                    <div class="clearance-card">
+                        <div class="discount-badge">-50%</div>
+                        <div class="product-image">
+                            <img src="photo/Flower_basket.png" alt="Цветочная корзина">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Цветочная корзина декоративная</h3>
+                            <p class="product-category">Садовый декор</p>
+                            
+                            <div class="price-section">
+                                <div class="current-price">$75</div>
+                                <div class="original-price">$150</div>
+                                <div class="you-save">Экономия $75</div>
+                            </div>
+                            
+                            <div class="stock-info">
+                                <div class="stock-bar">
+                                    <div class="stock-progress" style="width: 30%;"></div>
+                                </div>
+                                <div class="stock-text">Осталось: 6 шт.</div>
+                            </div>
+                            
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Товар 5 -->
+                    <div class="clearance-card">
+                        <div class="discount-badge">-45%</div>
+                        <div class="product-image">
+                            <img src="photo/Tools and equipment.png" alt="Инструменты">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Набор садовых инструментов</h3>
+                            <p class="product-category">Инструменты</p>
+                            
+                            <div class="price-section">
+                                <div class="current-price">$122</div>
+                                <div class="original-price">$221</div>
+                                <div class="you-save">Экономия $99</div>
+                            </div>
+                            
+                            <div class="stock-info">
+                                <div class="stock-bar">
+                                    <div class="stock-progress" style="width: 50%;"></div>
+                                </div>
+                                <div class="stock-text">Осталось: 10 шт.</div>
+                            </div>
+                            
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Товар 6 -->
+                    <div class="clearance-card">
+                        <div class="discount-badge">-40%</div>
+                        <div class="product-image">
+                            <img src="photo/Fertilizer.png" alt="Удобрение">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Удобрение комплексное 5кг</h3>
+                            <p class="product-category">Удобрения</p>
+                            
+                            <div class="price-section">
+                                <div class="current-price">$26</div>
+                                <div class="original-price">$43</div>
+                                <div class="you-save">Экономия $17</div>
+                            </div>
+                            
+                            <div class="stock-info">
+                                <div class="stock-bar">
+                                    <div class="stock-progress" style="width: 70%;"></div>
+                                </div>
+                                <div class="stock-text">Осталось: 14 шт.</div>
+                            </div>
+                            
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Товар 7 -->
+                    <div class="clearance-card">
+                        <div class="discount-badge">-35%</div>
+                        <div class="product-image">
+                            <img src="photo/Planting material.png" alt="Посадочный материал">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Набор семян овощей</h3>
+                            <p class="product-category">Посадочный материал</p>
+                            
+                            <div class="price-section">
+                                <div class="current-price">$7</div>
+                                <div class="original-price">$11</div>
+                                <div class="you-save">Экономия $4</div>
+                            </div>
+                            
+                            <div class="stock-info">
+                                <div class="stock-bar">
+                                    <div class="stock-progress" style="width: 80%;"></div>
+                                </div>
+                                <div class="stock-text">Осталось: 16 шт.</div>
+                            </div>
+                            
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Товар 8 -->
+                    <div class="clearance-card">
+                        <div class="discount-badge">-30%</div>
+                        <div class="product-image">
+                            <img src="photo/Protective products and septic tanks.png" alt="Защитные средства">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Защитное средство от вредителей</h3>
+                            <p class="product-category">Защитные средства</p>
+                            
+                            <div class="price-section">
+                                <div class="current-price">$17</div>
+                                <div class="original-price">$24</div>
+                                <div class="you-save">Экономия $7</div>
+                            </div>
+                            
+                            <div class="stock-info">
+                                <div class="stock-bar">
+                                    <div class="stock-progress" style="width: 90%;"></div>
+                                </div>
+                                <div class="stock-text">Осталось: 18 шт.</div>
+                            </div>
+                            
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearance-pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-next">Следующая <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="clearance-info-section">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>Бесплатная доставка</h3>
+                        <p>При заказе от $200. Быстрая доставка по всему городу.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-undo"></i>
+                        </div>
+                        <h3>Легкий возврат</h3>
+                        <p>Возврат товара в течение 14 дней без объяснения причин.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Гарантия качества</h3>
+                        <p>Все товары проверены и имеют гарантию производителя.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Поддержка 24/7</h3>
+                        <p>Наша служба поддержки готова помочь в любое время.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-header-section">
+                    <div class="contact-header">
+                        <div class="contact-title-wrapper">
+                            <h2 class="contact-title">Contact</h2>
+                        </div>
+                    </div>
+
+                    <div class="contact-cards-container">
+                        <div class="contact-card contact-card-phone">
+                            <div class="contact-content">
+                                <h3 class="contact-card-text">Phone</h3>
+                                <p class="contact-card-title">+7 (499) 350-66-04</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card contact-card-address">
+                            <div class="contact-content">
+                                <h3 class="contact-card-text">Address</h3>
+                                <p class="contact-card-title">Dubininskaya Ulitsa, 96, Moscow, Russia, 115093</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card contact-card-social">
+                            <div class="contact-content">
+                                <h3 class="contact-card-text">Socials</h3>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon">
+                                        <img src="photo/instagram-icon.png" alt="Instagram" class="social-icon-img">
+                                    </a>
+                                    <a href="#" class="social-icon">
+                                        <img src="photo/whatsapp-icon.png" alt="WhatsApp" class="social-icon-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card contact-card-hours">
+                            <div class="contact-content">
+                                <h3 class="contact-card-text">Working Hours</h3>
+                                <p class="contact-card-title">24 hours a day</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <div class="map-wrapper">
+                            <img src="photo/map.png" alt="Карта местоположения" class="map-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="clearance.js"></script>
+</body>
+
+</html>

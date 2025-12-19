@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой интернет-магазин</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="photo/logo.png" alt="Логотип сайта" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Main Page</a></li>
+                    <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">All products</a></li>
+                    <li class="nav-item"><a href="clearance.html" class="nav-link">All sales</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-item">
+                <a href="cart.html" class="cart-link">
+                    <img src="photo/icon.svg" alt="Корзина" class="logo-img1">
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class.container>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Amazing Discounts</h1>
+                        <h2 class="hero-subtitle"><strong>on Garden Products!</strong></h2>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary">Check out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-header-section">
+            <div class="container">
+                <div class="categories-header">
+                    <div class="categories-title-wrapper">
+                        <h2 class="categories-title">Categories</h2>
+                        <div class="categories-line"></div>
+                    </div>
+                    <a href="#" class="all-categories-btn">
+                        All categories
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-cards-section">
+            <div class="container">
+                <div class="categories-cards-grid">
+                    <!-- Карточка 1 -->
+                    <div class="category-card-item">
+                        <div class="category-card-image">
+                            <img src="photo/Fertilizer.png" alt="Fertilizer">
+                        </div>
+                        <div class="category-card-text-container">
+                            <h3 class="category-card-title">Fertilizer</h3>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="category-card-item">
+                        <div class="category-card-image">
+                            <img src="photo/Protective products and septic tanks.png"
+                                alt="Protective products and septic tanks">
+                        </div>
+                        <div class="category-card-text-container">
+                            <h3 class="category-card-title">Protective products and septic tanks</h3>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="category-card-item">
+                        <div class="category-card-image">
+                            <img src="photo/Planting material.png" alt="Planting material">
+                        </div>
+                        <div class="category-card-text-container">
+                            <h3 class="category-card-title">Planting material</h3>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 4 -->
+                    <div class="category-card-item">
+                        <div class="category-card-image">
+                            <img src="photo/Tools and equipment.png" alt="Tools and equipment">
+                        </div>
+                        <div class="category-card-text-container">
+                            <h3 class="category-card-title">Tools and equipment</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discount-section">
+            <div class="discount-background">
+                <div class="discount-text-overlay">
+                    <h2 class="discount-title">5% off on the first order</h2>
+                </div>
+
+                <div class="discount-section-photo">
+                    <img src="photo/discount-section-photo.png" alt="Описание">
+                </div>
+
+                <div class="discount-form-container">
+                    <form class="discount-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <button type="submit" class="discount-submit-btn">Get a discount</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-header-section">
+            <div class="container">
+                <div class="categories-header">
+                    <div class="categories-title-wrapper">
+                        <h2 class="categories-title">Sale</h2>
+                        <div class="categories-line1"></div>
+                    </div>
+                    <a href="#" class="all-categories-btn">
+                        All sales
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="products-grid">
+                    <!-- Карточка 1 -->
+                    <div class="product-card">
+                        <div class="discount-badge">-50%</div>
+                        <div class="product-image">
+                            <img src="photo/Decorative_forged_ brid.png">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Decorative forged brid...</h3>
+                            <div class="pricing">
+                                <span class="current-price">$500</span>
+                                <span class="original-price">$1000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="product-card">
+                        <div class="discount-badge">-34%</div>
+                        <div class="product-image">
+                            <img src="photo/Flower_basket.png">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Flower basket</h3>
+                            <div class="pricing">
+                                <span class="current-price">$100</span>
+                                <span class="original-price">$150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="product-card">
+                        <div class="discount-badge">-25%</div>
+                        <div class="product-image">
+                            <img src="photo/Aquarium_lock.png">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Aquarium lock</h3>
+                            <div class="pricing">
+                                <span class="current-price">$150</span>
+                                <span class="original-price">$200</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 4 -->
+                    <div class="product-card">
+                        <div class="discount-badge">-17%</div>
+                        <div class="product-image">
+                            <img src="photo/Secateurs.png">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Secateurs</h3>
+                            <div class="pricing">
+                                <span class="current-price">$199</span>
+                                <span class="original-price">$240</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-header-section">
+                    <div class="contact-header">
+                        <div class="contact-title-wrapper">
+                            <h2 class="contact-title">Contact</h2>
+                        </div>
+                    </div>
+
+                    <div class="contact-grid">
+                        <div class="contact-left-column">
+                            <div class="contact-card contact-card-phone">
+                                <div class="contact-content">
+                                    <h3 class="contact-card-text">Phone</h3>
+                                    <p class="contact-card-title">+7 (499) 350-66-04</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-card contact-card-address">
+                                <div class="contact-content">
+                                    <h3 class="contact-card-text">Address</h3>
+                                    <p class="contact-card-title">Dubininskaya Ulitsa, 96, Moscow, Russia, 115093</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-right-column">
+                            <div class="contact-card contact-card-social">
+                                <div class="contact-content">
+                                    <h3 class="contact-card-text">Socials</h3>
+                                    <div class="social-icons">
+                                        <a href="#" class="social-icon">
+                                            <img src="photo/instagram-icon.png" alt="Instagram" class="social-icon-img">
+                                        </a>
+                                        <a href="#" class="social-icon">
+                                            <img src="photo/whatsapp-icon.png" alt="WhatsApp" class="social-icon-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-card contact-card-hours">
+                                <div class="contact-content">
+                                    <h3 class="contact-card-text">Working Hours</h3>
+                                    <p class="contact-card-title">24 hours a day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <div class="map-wrapper">
+                            <img src="photo/map.png" alt="Карта местоположения" class="map-image">
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

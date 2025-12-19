@@ -1,0 +1,546 @@
+/* ============================================
+   СТРАНИЦА "ВСЕ СКИДКИ" - ОБНОВЛЕННАЯ ВЕРСИЯ
+   ============================================ */
+
+.sales-page .main-content {
+    padding-top: 40px;
+}
+
+/* Заголовок страницы - ОБНОВЛЕНО */
+.sales-header-section {
+    padding: 40px 0 30px;
+    background-color: #ffffff;
+}
+
+.sales-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрируем заголовок */
+    position: relative;
+    width: 100%;
+}
+
+.sales-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.sales-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #000000 !important; /* Черный цвет */
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sales-title:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    width: 120px;
+    height: 4px;
+    background: #0e8a25;
+    border-radius: 2px;
+}
+
+/* Фильтры для страницы скидок - ОБНОВЛЕНО */
+.sales-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filter-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-select {
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    font-size: 1rem;
+    color: #495057;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.filter-select:hover {
+    border-color: #0e8a25;
+}
+
+.sales-count {
+    font-size: 1.1rem;
+    color: #0e8a25;
+    font-weight: 600;
+}
+
+.count-number {
+    background: #0e8a25;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+/* Сетка товаров со скидками - ОБНОВЛЕНО */
+.sales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sales-product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.sales-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border-color: #0e8a25;
+}
+
+/* Метки скидок */
+.discount-label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #e74c3c;
+    color: white;
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    border-radius: 6px;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+}
+
+.big-discount .discount-label {
+    background: #e74c3c;
+    font-size: 1.5rem;
+    padding: 12px 18px;
+}
+
+.ending-soon .discount-label {
+    background: #f39c12;
+}
+
+.time-left {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #e74c3c;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+/* Изображения товаров */
+.product-image-container {
+    height: 250px;
+    overflow: hidden;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Детали товара */
+.product-details {
+    padding: 25px;
+}
+
+.product-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    height: 60px;
+    overflow: hidden;
+}
+
+.price-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.discount-price {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #e74c3c;
+}
+
+.original-price {
+    font-size: 1.3rem;
+    color: #95a5a6;
+    text-decoration: line-through;
+}
+
+.discount-info {
+    margin-bottom: 20px;
+}
+
+.discount-amount {
+    display: inline-block;
+    background: #ffebee;
+    color: #e74c3c;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Кнопки */
+.buy-now-btn {
+    width: 100%;
+    padding: 14px;
+    background: #0e8a25;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background: #0b6e1c;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(14, 138, 37, 0.3);
+}
+
+.buy-now-btn.urgent {
+    background: #e74c3c;
+    animation: pulse 2s infinite;
+}
+
+.buy-now-btn.urgent:hover {
+    background: #c0392b;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(231, 76, 60, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+    }
+}
+
+/* Пагинация - ОБНОВЛЕНО */
+.sales-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.page-btn {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #495057;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-btn:hover {
+    border-color: #0e8a25;
+    color: #0e8a25;
+}
+
+.page-btn.active {
+    background: #0e8a25;
+    color: white;
+    border-color: #0e8a25;
+}
+
+.page-next {
+    padding: 12px 24px;
+    background: transparent;
+    color: #0e8a25;
+    border: 2px solid #0e8a25;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+}
+
+.page-next:hover {
+    background: #0e8a25;
+    color: white;
+}
+
+/* КОНТАКТНАЯ СЕКЦИЯ - ПОЛНОСТЬЮ ПЕРЕДЕЛАНА ДЛЯ ЦЕНТРИРОВАНИЯ */
+.sales-page .contact-section {
+    margin-left: 0 !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sales-page .contact-header-section {
+    margin-left: 0 !important;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sales-page .contact-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sales-page .contact-title-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sales-page .contact-title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #000000 !important; /* Черный цвет */
+    text-align: center;
+    padding-right: 0;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    width: 100%;
+}
+
+/* Центрирование контактной сетки */
+.sales-page .contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: -300px;
+    margin-right: auto;
+}
+
+/* Центрирование карты */
+.sales-page .map-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+    min-width: 1750px;
+    margin-left: -300px;
+}
+
+.sales-page .map-wrapper {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e0e0;
+    max-width: 1750px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .sales-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+        padding: 0 20px;
+    }
+    
+    .sales-title {
+        font-size: 3rem;
+    }
+    
+    .sales-page .contact-title {
+        font-size: 3.5rem;
+    }
+    
+    .sales-page .map-wrapper {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sales-filters {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+        margin: 0 20px 40px 20px;
+    }
+    
+    .filter-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .filter-select {
+        min-width: 48%;
+    }
+    
+    .sales-count {
+        align-self: center;
+    }
+    
+    .sales-title {
+        font-size: 2.5rem;
+    }
+    
+    .sales-page .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 20px;
+    }
+    
+    .sales-page .contact-title {
+        font-size: 3rem;
+    }
+    
+    .sales-page .contact-left-column,
+    .sales-page .contact-right-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sales-header-section {
+        padding: 30px 20px 20px;
+    }
+    
+    .sales-title {
+        font-size: 2.2rem;
+    }
+    
+    .sales-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .filter-group {
+        flex-direction: column;
+    }
+    
+    .filter-select {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .product-image-container {
+        height: 220px;
+    }
+    
+    .product-name {
+        font-size: 1.3rem;
+    }
+    
+    .discount-price {
+        font-size: 1.8rem;
+    }
+    
+    .sales-page .contact-title {
+        font-size: 2.5rem;
+    }
+    
+    .sales-page .contact-card {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sales-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    
+    .sales-pagination {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    
+    .sales-title {
+        font-size: 1.8rem;
+    }
+    
+    .page-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .page-next {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .sales-page .contact-title {
+        font-size: 2rem;
+    }
+    
+    .sales-page .contact-card {
+        padding: 20px;
+    }
+}
